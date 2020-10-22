@@ -59,7 +59,7 @@
                                 "poster_path": images_uri + record.poster_path,
                                 "popularity": record.popularity,
                                 "id": record.id,
-                                "original_title": record.original_title,
+                                "original_title": record.original_title
                             };
 
                             toRet.push(entry)
