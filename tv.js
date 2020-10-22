@@ -65,7 +65,7 @@
                                 "id": record.id,
                                 "original_title": record.original_title,
                                 "release_date": record.release_date,
-                                "vote_average": record.vote_average,
+                                "vote_count": record.vote_count,
                                 "popularity": record.popularity,
                                 "genre_ids": record.genre_ids
                             };
