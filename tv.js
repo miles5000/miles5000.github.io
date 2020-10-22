@@ -17,7 +17,7 @@
             { id: "release_date", dataType: tableau.dataTypeEnum.string },
             { id: "vote_count", dataType: tableau.dataTypeEnum.int },
             { id: "popularity", dataType: tableau.dataTypeEnum.number },
-            { id: "genre_ids", dataType: tableau.dataTypeEnum.array[integer] }
+            { id: "genre_ids", dataType: tableau.dataTypeEnum.array }
         ];
 
         var tableSchema = {
