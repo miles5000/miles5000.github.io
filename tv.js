@@ -4,7 +4,7 @@
     var num_pages = 10;
 
     var api_key = "7adcc4ec446ae9574c6aa9e0178fa26f",
-        base_uri = "https://api.themoviedb.org/3/movie/550?api_key=",
+        base_uri = "https://api.themoviedb.org/3/",
         images_uri =  "https://image.tmdb.org/t/p/w500";
 
     // Define the schema
@@ -53,7 +53,7 @@
 
     function getResultsPromise(table, pageNum) {
         return new Promise(function(resolve, reject) {
-            var connectionUrl = base_uri + "/movie/{movie_id}/popular?api_key=" + api_key + "&page=" + pageNum;
+            var connectionUrl = base_uri + "/movie/popular?api_key=" + api_key + "&page=" + pageNum;
             
             var xhr = $.ajax({
                 url: connectionUrl,
