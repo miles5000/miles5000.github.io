@@ -15,7 +15,9 @@
             { id: "id", dataType: tableau.dataTypeEnum.int },
             { id: "original_title", dataType: tableau.dataTypeEnum.string },
             { id: "release_date", dataType: tableau.dataTypeEnum.string },
-            { id: "vote_count", dataType: tableau.dataTypeEnum.int }
+            { id: "vote_count", dataType: tableau.dataTypeEnum.int },
+            { id: "popularity", dataType: tableau.dataTypeEnum.number },
+            { id: "genre_ids", dataType: tableau.dataTypeEnum.array[integer] }
         ];
 
         var tableSchema = {
@@ -63,7 +65,9 @@
                                 "id": record.id,
                                 "original_title": record.original_title,
                                 "release_date": record.release_date,
-                                "vote_average": record.vote_average
+                                "vote_average": record.vote_average,
+                                "popularity": record.popularity,
+                                "genre_ids": record.genre_ids
                             };
 
                             toRet.push(entry)
