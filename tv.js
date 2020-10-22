@@ -67,6 +67,7 @@
                                 "poster_path": images_uri + record.poster_path,
                                 "popularity": record.popularity,
                                 "id": record.id,
+                                "original_title": record.original_title,
                                 "adult": record.adult,
                                 "overview": record.overview,
                                 "release_date": record.release_date,
