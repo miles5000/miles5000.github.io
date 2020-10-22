@@ -16,8 +16,8 @@
         ];
 
         var tableSchema = {
-            id: "shows",
-            alias: "Top Rated TV Shows",
+            id: "movies",
+            alias: "Top Rated Movies",
             columns: cols
         };
 
