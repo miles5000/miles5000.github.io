@@ -25,8 +25,8 @@
         ];
 
         var tableSchema = {
-            id: "shows",
-            alias: "Top Rated TV Shows",
+            id: "movies",
+            alias: "Top Rated Movies",
             columns: cols
         };
 
@@ -53,7 +53,7 @@
 
     function getResultsPromise(table, pageNum) {
         return new Promise(function(resolve, reject) {
-            var connectionUrl = base_uri + "tv/popular?api_key=" + api_key + "&page=" + pageNum;
+            var connectionUrl = base_uri + "movie/popular?api_key=" + api_key + "&page=" + pageNum;
             
             var xhr = $.ajax({
                 url: connectionUrl,
