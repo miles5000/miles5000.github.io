@@ -3,7 +3,7 @@
     var myConnector = tableau.makeConnector();
     var num_pages = 10;
 
-    var api_key = "7adcc4ec446ae9574c6aa9e0178fa26f",
+    var api_key = "8922bff85ef645a09730d7c1836c3edf",
         base_uri = "https://api.themoviedb.org/3/",
         images_uri =  "https://image.tmdb.org/t/p/w500";
 
