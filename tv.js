@@ -12,7 +12,8 @@
         var cols = [
             { id: "poster_path", dataType: tableau.dataTypeEnum.string },
             { id: "popularity", dataType: tableau.dataTypeEnum.float },
-            { id: "id", dataType: tableau.dataTypeEnum.int }
+            { id: "id", dataType: tableau.dataTypeEnum.int },
+            { id: "original_title", dataType: tableau.dataTypeEnum.string }
         ];
 
         var tableSchema = {
@@ -58,6 +59,7 @@
                                 "poster_path": images_uri + record.poster_path,
                                 "popularity": record.popularity,
                                 "id": record.id,
+                                "original_title": record.original_title,
                             };
 
                             toRet.push(entry)
