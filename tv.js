@@ -11,8 +11,7 @@
     myConnector.getSchema = function(schemaCallback) {
         var cols = [
             { id: "poster_path", dataType: tableau.dataTypeEnum.string },
-        
-        ];
+           ];
 
         var tableSchema = {
             id: "movies",
@@ -56,7 +55,6 @@
                             entry = {
                                 "poster_path": images_uri + record.poster_path,
                                
-
                             toRet.push(entry)
                         });
 
