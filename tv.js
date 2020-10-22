@@ -11,17 +11,7 @@
     myConnector.getSchema = function(schemaCallback) {
         var cols = [
             { id: "poster_path", dataType: tableau.dataTypeEnum.string },
-            { id: "popularity", dataType: tableau.dataTypeEnum.float },
-            { id: "id", dataType: tableau.dataTypeEnum.int },
-            { id: "backdrop_path", dataType: tableau.dataTypeEnum.string },
-            { id: "vote_average", dataType: tableau.dataTypeEnum.float },
-            { id: "overview", dataType: tableau.dataTypeEnum.string },
-            { id: "first_air_date", dataType: tableau.dataTypeEnum.date },
-            { id: "origin_country", dataType: tableau.dataTypeEnum.string },
-            { id: "original_language", dataType: tableau.dataTypeEnum.string },
-            { id: "vote_count", dataType: tableau.dataTypeEnum.int },
-            { id: "name", dataType: tableau.dataTypeEnum.string },
-            { id: "original_name", dataType: tableau.dataTypeEnum.string }
+        
         ];
 
         var tableSchema = {
@@ -65,18 +55,7 @@
                         _.each(data.results, function(record) {               
                             entry = {
                                 "poster_path": images_uri + record.poster_path,
-                                "popularity": record.popularity,
-                                "id": record.id,
-                                "backdrop_path": images_uri + record.backdrop_path,
-                                "vote_average": record.vote_average,
-                                "overview": record.overview,
-                                "first_air_date": record.first_air_date,
-                                "origin_country": record.origin_country[0] || null,
-                                "original_language": record.original_language,
-                                "vote_count": record.vote_count,
-                                "name": record.name,
-                                "original_name": record.original_name
-                            };
+                               
 
                             toRet.push(entry)
                         });
