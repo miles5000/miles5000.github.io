@@ -14,7 +14,8 @@
             { id: "popularity", dataType: tableau.dataTypeEnum.float },
             { id: "id", dataType: tableau.dataTypeEnum.int },
             { id: "original_title", dataType: tableau.dataTypeEnum.string },
-            { id: "vote_count", dataType: tableau.dataTypeEnum.int }
+            { id: "vote_count", dataType: tableau.dataTypeEnum.int },
+            { id: "overview", dataType: tableau.dataTypeEnum.string }
         ];
 
         var tableSchema = {
@@ -61,7 +62,8 @@
                                 "popularity": record.popularity,
                                 "id": record.id,
                                 "original_title": record.original_title,
-                                "vote_count": record.vote_count
+                                "vote_count": record.vote_count,
+                                "overview": record.overview
                             };
 
                             toRet.push(entry)
