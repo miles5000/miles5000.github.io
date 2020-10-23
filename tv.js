@@ -17,7 +17,7 @@
             { id: "vote_count", dataType: tableau.dataTypeEnum.int },
             { id: "overview", dataType: tableau.dataTypeEnum.string },
             { id: "vote_average", dataType: tableau.dataTypeEnum.float },
-            { id: "genre_ids", dataType: tableau.dataTypeEnum.float }
+            { id: "genre_ids", dataType: tableau.dataTypeEnum.makeArray }
         ];
 
         var tableSchema = {
