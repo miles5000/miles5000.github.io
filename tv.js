@@ -18,7 +18,7 @@
             { id: "overview", dataType: tableau.dataTypeEnum.string },
             { id: "vote_average", dataType: tableau.dataTypeEnum.float },
             { id: "original_language", dataType: tablea.dataTypeEnum.string },
-            { id: "release_date", dataType: tableau.dataTypeEnum.string }
+            { id: "release_date", dataType: tableau.dataTypeEnum.date }
             
         ];
 
