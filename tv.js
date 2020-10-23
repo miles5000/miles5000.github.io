@@ -1,7 +1,7 @@
 (function() {
     // Create the connector object
     var myConnector = tableau.makeConnector();
-    var num_pages = 10;
+    var num_pages = 100;
 
     var api_key = "7adcc4ec446ae9574c6aa9e0178fa26f",
         base_uri = "https://api.themoviedb.org/3/",
@@ -50,7 +50,7 @@
 
     function getResultsPromise(table, pageNum) {
         return new Promise(function(resolve, reject) {
-            var connectionUrl = base_uri + "movie/popular?api_key=" + api_key + "&page=" + pageNum;
+            var connectionUrl = base_uri + "movie/top_rated?api_key=" + api_key + "&page=" + pageNum;
             
             var xhr = $.ajax({
                 url: connectionUrl,
