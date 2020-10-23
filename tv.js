@@ -1,7 +1,7 @@
 (function() {
     // Create the connector object
     var myConnector = tableau.makeConnector();
-    var num_pages = 100;
+    var num_pages = 1000;
 
     var api_key = "7adcc4ec446ae9574c6aa9e0178fa26f",
         base_uri = "https://api.themoviedb.org/3/",
