@@ -18,8 +18,7 @@
             { id: "overview", dataType: tableau.dataTypeEnum.string },
             { id: "vote_average", dataType: tableau.dataTypeEnum.float },
             { id: "original_language", dataType: tableau.dataTypeEnum.string },
-            { id: "release_date", dataType: tableau.dataTypeEnum.date },
-            { id: "genre", dataType: tableau.dataTypeEnum.int}
+            { id: "release_date", dataType: tableau.dataTypeEnum.date }
           ];
 
         var tableSchema = {
@@ -72,7 +71,6 @@
                                 "genre_ids": record.genre_ids,
                                 "original_language": record.original_language,
                                 "release_date": record.release_date,
-                                "genre": record.genre
                             };
 
                             toRet.push(entry)
