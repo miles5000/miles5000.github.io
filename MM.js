@@ -42,7 +42,7 @@
 
     function getResultsPromise(table, pageNum) {
         return new Promise(function(resolve, reject) {
-            var connectionUrl = base_uri + "/movie/top_rated?api_key=" + api_key + "&page=" + pageNum;
+            var connectionUrl = base_uri + "movie/top_rated?api_key=" + api_key + "&page=" + pageNum;
             
             var xhr = $.ajax({
                 url: connectionUrl,
