@@ -10,10 +10,7 @@
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
         var cols = [
-            { id: "profile_path", dataType: tableau.dataTypeEnum.string },
-            { id: "popularity", dataType: tableau.dataTypeEnum.float },
-            { id: "id", dataType: tableau.dataTypeEnum.int },
-            { id: "name", dataType: tableau.dataTypeEnum.string }
+            { id: "popularity", dataType: tableau.dataTypeEnum.float }
           ];
 
         var tableSchema = {
@@ -45,7 +42,7 @@
 
     function getResultsPromise(table, pageNum) {
         return new Promise(function(resolve, reject) {
-            var connectionUrl = base_uri + "/person/popular?api_key=" + api_key + "&page=" + pageNum;
+            var connectionUrl = base_uri + "/movie/top_rated?api_key=" + api_key + "&page=" + pageNum;
             
             var xhr = $.ajax({
                 url: connectionUrl,
@@ -56,10 +53,7 @@
                     if (data.results) {
                         _.each(data.results, function(record) {               
                             entry = {
-                                "profile_path": images_uri + record.profile_path,
-                                "popularity": record.popularity,
-                                "id": record.id,
-                                "name": record.name
+                                "profile_path": images_uri + record.profile_path
                             };
 
                             toRet.push(entry)
