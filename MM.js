@@ -5,7 +5,7 @@
 
     var api_key = "7adcc4ec446ae9574c6aa9e0178fa26f",
         base_uri = "https://api.themoviedb.org/3/",
-        images_uri =  "https://image.tmdb.org/t/p/w500";
+        images_uri =  "https://image.tmdb.org/t/p/w100";
 
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
