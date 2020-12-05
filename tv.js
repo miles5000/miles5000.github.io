@@ -13,12 +13,8 @@
             { id: "poster_path", dataType: tableau.dataTypeEnum.string },
             { id: "popularity", dataType: tableau.dataTypeEnum.float },
             { id: "id", dataType: tableau.dataTypeEnum.int },
-            { id: "original_title", dataType: tableau.dataTypeEnum.string },
             { id: "vote_count", dataType: tableau.dataTypeEnum.int },
-            { id: "overview", dataType: tableau.dataTypeEnum.string },
             { id: "vote_average", dataType: tableau.dataTypeEnum.float },
-            { id: "original_language", dataType: tableau.dataTypeEnum.string },
-            { id: "release_date", dataType: tableau.dataTypeEnum.date }
           ];
 
         var tableSchema = {
@@ -64,13 +60,8 @@
                                 "poster_path": images_uri + record.poster_path,
                                 "popularity": record.popularity,
                                 "id": record.id,
-                                "original_title": record.original_title,
                                 "vote_count": record.vote_count,
-                                "overview": record.overview,
-                                "vote_average": record.vote_average,
-                                "genre_ids": record.genre_ids,
-                                "original_language": record.original_language,
-                                "release_date": record.release_date,
+                                "vote_average": record.vote_average
                             };
 
                             toRet.push(entry)

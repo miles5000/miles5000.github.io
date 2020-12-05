@@ -1,7 +1,7 @@
 (function() {
     // Create the connector object
     var myConnector = tableau.makeConnector();
-    var num_pages = 400;
+    var num_pages = 500;
 
     var api_key = "7adcc4ec446ae9574c6aa9e0178fa26f",
         base_uri = "https://api.themoviedb.org/3/",
@@ -12,7 +12,6 @@
         var cols = [
             { id: "profile_path", dataType: tableau.dataTypeEnum.string },
             { id: "popularity", dataType: tableau.dataTypeEnum.float },
-            { id: "id", dataType: tableau.dataTypeEnum.int },
             { id: "name", dataType: tableau.dataTypeEnum.string }
           ];
 
@@ -58,7 +57,6 @@
                             entry = {
                                 "profile_path": images_uri + record.profile_path,
                                 "popularity": record.popularity,
-                                "id": record.id,
                                 "name": record.name
                             };
 
