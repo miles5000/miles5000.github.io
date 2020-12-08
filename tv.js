@@ -57,11 +57,11 @@
                     if (data.results) {
                         _.each(data.results, function(record) {               
                             entry = {
-                                "poster_path": images_uri + record.Poster_path,
-                                "popularity": record.Popularity,
+                                "poster_path": images_uri + record.poster_path,
+                                "popularity": record.popularity,
                                 "id": record.id,
-                                "vote_count": record.Vote_count,
-                                "vote_average": record.Vote_average
+                                "vote_count": record.vote_count,
+                                "vote_average": record.vote_average
                             };
 
                             toRet.push(entry)

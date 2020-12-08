@@ -55,9 +55,9 @@
                     if (data.results) {
                         _.each(data.results, function(record) {               
                             entry = {
-                                "profile_path": images_uri + record.Profile_path,
-                                "popularity": record.Popularity,
-                                "name": record.Name
+                                "profile_path": images_uri + record.profile_path,
+                                "popularity": record.popularity,
+                                "name": record.name
                             };
 
                             toRet.push(entry)
